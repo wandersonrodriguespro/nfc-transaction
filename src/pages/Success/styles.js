@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+export const Content = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+`
+
 export const Container = styled.div`
   background-color: #fff;
   max-width: 400px;
@@ -15,9 +22,14 @@ export const Container = styled.div`
   font-size: 20px;
   animation: scale 800ms ease-in-out;
 
+  h1 {
+    font-size: 30px;
+    color: green;
+  }
+
   p{
     font-size: 17px;
-    color: #ccc;
+    color: #898989;
   }
 
   @keyframes scale {
