@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Dot, Dots, Wave, WaveContainer } from './styles';
-import { Container } from '../../styles/globalStyles';
+import { Content, Dot, Dots, Wave, WaveContainer } from './styles';
+import { Container } from './styles';
 
 function Processing() {
   const navigate = useNavigate();
@@ -17,19 +17,21 @@ function Processing() {
   }, [navigate, value]);
 
   return (
-    <Container>
-      <Dots>
-        <Dot />
-        <Dot />
-        <Dot />
-      </Dots>
-      <h1>Processing</h1>
+      <Content>
       <WaveContainer>
         <Wave />
         <Wave />
         <Wave />
       </WaveContainer>
+    <Container>
+      <h1>$ {value}</h1>
+      {/* <Dots>
+        <Dot />
+        <Dot />
+        <Dot />
+      </Dots> */}
     </Container>
+    </Content>
   );
 }
 

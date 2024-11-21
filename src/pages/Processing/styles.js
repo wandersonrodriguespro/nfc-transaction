@@ -1,4 +1,33 @@
 import styled from "styled-components";
+export const Content = styled.div`
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+`
+
+export const Container = styled.div`
+  position: absolute;
+  max-width: 350px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #ffafaf6e;
+  color: #fff; 
+  border-radius: 10px;
+  box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    font-size: 55px;
+    color: #fff;
+    height: 90px;
+  }
+`
 
 export const Dots = styled.div`
   display: flex;
@@ -52,7 +81,7 @@ export const WaveContainer = styled.div`
     }
     
     100% {
-        transform: scale(1.5);
+        transform: scale(5);
         box-shadow: 0 0 0 0 rgba(51, 204, 102, 0), 0 0 0 30px rgba(51, 204, 102, 0);
     }
  

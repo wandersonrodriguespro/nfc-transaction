@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Apple from '../../assets/Apple.svg';
-import { InputValue } from './styles';
-import { Container } from '../../styles/globalStyles';
+import { InputValue, Container } from './styles';
 
 function Home() {
   const [value, setValue] = useState('');
