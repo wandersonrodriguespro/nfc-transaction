@@ -8,7 +8,6 @@ justify-content: center;
 `
 
 export const Container = styled.div`
-  position: absolute;
   max-width: 350px;
   height: 150px;
   display: flex;
@@ -23,9 +22,9 @@ export const Container = styled.div`
   box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.1);
 
   h1 {
-    font-size: 55px;
+    font-size: 25px;
     color: #fff;
-    height: 90px;
+    /* height: 90px; */
   }
 `
 
@@ -61,7 +60,7 @@ export const Dot = styled.div `
 `
 
 export const WaveContainer = styled.div`
-    position: relative;
+    position: absolute;
     width: 100px;
     height: 100px;
     margin: 2rem auto;
@@ -81,7 +80,7 @@ export const WaveContainer = styled.div`
     }
     
     100% {
-        transform: scale(5);
+        transform: scale(1);
         box-shadow: 0 0 0 0 rgba(51, 204, 102, 0), 0 0 0 30px rgba(51, 204, 102, 0);
     }
  

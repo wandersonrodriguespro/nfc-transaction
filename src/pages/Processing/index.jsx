@@ -17,21 +17,14 @@ function Processing() {
   }, [navigate, value]);
 
   return (
-      <Content>
-      <WaveContainer>
-        <Wave />
-        <Wave />
-        <Wave />
-      </WaveContainer>
     <Container>
-      <h1>$ {value}</h1>
-      {/* <Dots>
+      <h1>Processing</h1>
+      <Dots>
         <Dot />
         <Dot />
         <Dot />
-      </Dots> */}
+      </Dots>
     </Container>
-    </Content>
   );
 }
 

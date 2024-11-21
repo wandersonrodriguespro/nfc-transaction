@@ -1,27 +1,25 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { InputValue, Container } from './styles';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { Container, Content, Wave, WaveContainer } from './styles';
 
 function Home() {
-  const [value, setValue] = useState('');
   const navigate = useNavigate();
+  const location = useLocation();
 
-  const handleTransaction = () => {
-    if (value) {
-      navigate('/processing', { state: { value } });
-    }
+  const handleBack = () => {
+    navigate('/processing');
   };
 
   return (
-    <Container>
-      <h1>Amount</h1>
-
-      <InputValue type="number" placeholder="Enter the value" value={value} onChange={(e) => setValue(e.target.value)} className="input" />
-
-      <button onClick={handleTransaction} className="button">
-        Charge
-      </button>
-    </Container>
+    <Content onClick={handleBack}>
+      <Container>
+        <h1>$ 1,00</h1>
+      </Container>
+      <WaveContainer>
+        <Wave />
+        <Wave />
+        <Wave />
+      </WaveContainer>
+    </Content>
   );
 }
 
