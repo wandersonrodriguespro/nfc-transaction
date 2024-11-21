@@ -29,7 +29,7 @@ function Success() {
           <img src={CheckIcon} alt="Check Icon" />
           <p>Payment succeeded</p>
         </PaymentSucceed>
-        <p>Thank you for your paymest.</p>
+        <p>Thank you for your payment.</p>
       </Container>
     </Content>
   );
