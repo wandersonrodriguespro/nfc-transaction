@@ -18,12 +18,12 @@ function Processing() {
 
   return (
     <Container>
-      <h1>Processing</h1>
       <Dots>
         <Dot />
         <Dot />
         <Dot />
       </Dots>
+      <h1>Processing</h1>
       <WaveContainer>
         <Wave />
         <Wave />

@@ -5,7 +5,6 @@ export const Dots = styled.div`
   align-items: center;
   justify-content: center;
   gap: 3px;
-  margin-top: -10px;
 
     :nth-child(1) {
   animation-delay: 0s;
@@ -18,29 +17,18 @@ export const Dots = styled.div`
     :nth-child(3) {
   animation-delay: 200ms;
     }
+
+    
 `
 export const Dot = styled.div `
-    width: 1px;
-    height: 1px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: #fff;
     opacity: 0.2;
     animation: jump 600ms infinite linear;
 
-    @keyframes jump {
-  0% {
-    opacity: 0.2;
-    transform: translateY(0px);
-  }
-  33% {
-    opacity: 0.6;
-    transform: translateY(-9px);
-  }
-  66% {
-    opacity: 0.2;
-    transform: translateY(0px);
-  }
-}
+    
 `
 
 export const WaveContainer = styled.div`
@@ -77,4 +65,19 @@ export const Wave = styled.div`
     height: 100%;
     border-radius: 50%;
     animation: wave-animation 3s infinite ease-out;
+
+    @keyframes jump {
+  0% {
+    opacity: 0.2;
+    transform: translateY(0px);
+  }
+  33% {
+    opacity: 0.6;
+    transform: translateY(-9px);
+  }
+  66% {
+    opacity: 0.2;
+    transform: translateY(0px);
+  }
+}
 `
