@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import '../styles/globalStyles';
+import { Dot, Dots, Wave, WaveContainer } from './styles';
+import { Container } from '../../styles/globalStyles';
 
 function Processing() {
   const navigate = useNavigate();
@@ -10,20 +11,25 @@ function Processing() {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate('/success', { state: { value } });
-    }, 3500);
+    }, 4500);
 
     return () => clearTimeout(timer);
   }, [navigate, value]);
 
   return (
-    <div className="container">
-      <h1>Processando...</h1>
-      <div className="wave-container">
-        <div className="wave"></div>
-        <div className="wave"></div>
-        <div className="wave"></div>
-      </div>
-    </div>
+    <Container>
+      <h1>Processing</h1>
+      <Dots>
+        <Dot />
+        <Dot />
+        <Dot />
+      </Dots>
+      <WaveContainer>
+        <Wave />
+        <Wave />
+        <Wave />
+      </WaveContainer>
+    </Container>
   );
 }
 

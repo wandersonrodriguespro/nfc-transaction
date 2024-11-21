@@ -1,5 +1,6 @@
 import { useLocation, useNavigate } from 'react-router-dom';
-import '../styles/globalStyles';
+import { Container } from './styles';
+
 
 function Success() {
   const location = useLocation();
@@ -11,13 +12,13 @@ function Success() {
   };
 
   return (
-    <div className="container">
-      <h1>Transaction Completed!</h1>
+    <Container>
+      <h1>Successful transaction!</h1>
       <p>Value: $ {value}</p>
       <button onClick={handleBack} className="button">
         New Transaction
       </button>
-    </div>
+    </Container>
   );
 }
 
