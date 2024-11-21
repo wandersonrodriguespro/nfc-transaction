@@ -7,15 +7,6 @@ function Success() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const playSuccessSound = () => {
-    const audio = new Audio('/src/assets/successful-operation.mp3');
-    audio.play();
-  };
-
-  useEffect(() => {
-    playSuccessSound();
-  }, []);
-
   const handleBack = () => {
     navigate('/');
   };
