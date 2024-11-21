@@ -11,7 +11,7 @@ function Processing() {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate('/success', { state: { value } });
-    }, 4500);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, [navigate, value]);

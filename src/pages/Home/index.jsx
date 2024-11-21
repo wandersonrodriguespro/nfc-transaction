@@ -12,7 +12,7 @@ function Home() {
   return (
     <Content onClick={handleBack}>
       <Container>
-        <h1>$ 1,00</h1>
+        <h1>$ 1</h1>
       </Container>
       <WaveContainer>
         <Wave />
