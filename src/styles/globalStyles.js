@@ -10,7 +10,6 @@ const globalStyles = createGlobalStyle`
     font-style: normal;
     font-family: "Poppins", sans-serif;
     width: 100%;
-    padding: 3%;
   }
 
   #root {
@@ -27,6 +26,7 @@ const globalStyles = createGlobalStyle`
     align-items: center;
     height: 100vh;
     transition: ease 0.4s;
+    padding: 3%;
   }
   
 
@@ -68,14 +68,14 @@ export const Container = styled.div`
   max-width: 400px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
   text-align: center;
   background: #ffafaf6e;
   color: #fff; 
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.1);
   font-size: 20px;
 `
 

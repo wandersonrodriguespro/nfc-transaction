@@ -18,8 +18,16 @@ export const Dots = styled.div`
     :nth-child(3) {
   animation-delay: 200ms;
     }
+`
+export const Dot = styled.div `
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.2;
+    animation: jump 600ms infinite linear;
 
- @keyframes jump {
+    @keyframes jump {
   0% {
     opacity: 0.2;
     transform: translateY(0px);
@@ -33,14 +41,6 @@ export const Dots = styled.div`
     transform: translateY(0px);
   }
 }
-`
-export const Dot = styled.div `
-    width: 1px;
-    height: 1px;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.2;
-    animation: jump 600ms infinite linear;
 `
 
 export const WaveContainer = styled.div`
