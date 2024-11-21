@@ -24,7 +24,6 @@ export const Container = styled.div`
   h1 {
     font-size: 25px;
     color: #fff;
-    /* height: 90px; */
   }
 `
 

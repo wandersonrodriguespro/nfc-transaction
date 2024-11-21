@@ -19,9 +19,6 @@ export const Container = styled.div`
   justify-content: center;
   text-align: center;
   color: #fff; 
-  /* background: #ffafaf6e; */
-  /* border-radius: 10px; */
-  /* box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.1); */
 
   h1 {
     font-size: 55px;
@@ -29,37 +26,6 @@ export const Container = styled.div`
     height: 90px;
   }
 `
-
-// export const Dots = styled.div`
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   gap: 3px;
-
-//     :nth-child(1) {
-//   animation-delay: 0s;
-//     }
-
-//     :nth-child(2) {
-//   animation-delay: 100ms;
-//     }
-
-//     :nth-child(3) {
-//   animation-delay: 200ms;
-//     }
-
-    
-// `
-// export const Dot = styled.div `
-//     width: 10px;
-//     height: 10px;
-//     border-radius: 50%;
-//     background-color: #fff;
-//     opacity: 0.2;
-//     animation: jump 600ms infinite linear;
-
-    
-// `
 
 export const WaveContainer = styled.div`
     position: relative;
