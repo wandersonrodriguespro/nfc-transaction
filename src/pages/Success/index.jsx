@@ -5,7 +5,6 @@ import CheckIcon from '../../assets/check-icon.svg'
 
 function Success() {
   const location = useLocation();
-  const { value } = location.state || { value: 0 };
   const navigate = useNavigate();
 
   const playSuccessSound = () => {
@@ -24,7 +23,6 @@ function Success() {
   return (
     <Content onClick={handleBack}>
       <Container>
-        <h1>${value}</h1>
         <PaymentSucceed>
           <img src={CheckIcon} alt="Check Icon" />
           <p>Payment succeeded</p>
