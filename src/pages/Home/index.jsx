@@ -19,7 +19,7 @@ function Home() {
       <InputValue type="number" placeholder="Enter the value" value={value} onChange={(e) => setValue(e.target.value)} className="input" />
 
       <button onClick={handleTransaction} className="button">
-        Pay
+        Charge
       </button>
     </Container>
   );
